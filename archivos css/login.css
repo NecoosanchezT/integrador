@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,400;1,200;1,800&display=swap');
+
+
+:root {
+    --background:linear-gradient(#090809,#122A77);
+    --letra: 'Montserrat', sans-serif;
+    --secundario:linear-gradient(to bottom, #31204b, #ff539b)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--letra);
+    color: aliceblue;
+}
+
+body {
+    background-image: url(../assets/login-background.jpg);
+}
+
+
+.login {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    background: var(--background);
+    width: 400px;
+    height: 350px;
+    position:relative;
+    left: 40%;
+    top: 320px;
+    gap: 20px;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 5px 0px 20px -5px black;
+}
+    
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    font-family:var(--letra);
+    gap: 15px;
+}
+  
+.login img {
+    width: 100px;
+    position: relative;
+    left: 130px;
+    
+}
+
+.login input {
+    color: #122A77;
+}
+
+.login button {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+   background:#ff539b;
+    border-radius: 10px;
+    padding: 3px 15px;
+   /* border: none; */
+   border-style: solid;
+   border-color: aliceblue
+}
+
+.login button:hover {
+    box-shadow:0px 0px 10px 0px aliceblue;
+    transition: all 0.6s;
+}
+
+   
+  
+
+
+
+
+
+
+
+
+
