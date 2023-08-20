@@ -1,4 +1,13 @@
+:root {
+  --background: linear-gradient(#090809, #122a77);
+  --letra: "Montserrat", sans-serif;
+  --secundario: linear-gradient(to bottom, #31204b, #ff539b);
+}
+
 @media (max-width: 992px) {
+  .log-reg {
+    margin-left: 0;
+  }
   #hero iframe {
     display: none;
   }
@@ -8,8 +17,6 @@
   }
 
   #hero h1 {
-    position: relative;
-    left: 130px;
     text-align: center;
   }
 
@@ -22,8 +29,7 @@
     flex-direction: column;
     border: none;
     box-shadow: none;
-    position: relative;
-    left: 130px;
+
     max-width: 700px;
     text-align: center;
     max-width: 100%;
@@ -37,21 +43,17 @@
 
     align-items: center;
     justify-content: center;
-    position: relative;
-    left: 130px;
+
     gap: 80px;
   }
   #cards h2 {
-    position: relative;
-    left: 150px;
     font-size: 80px;
   }
 
   .gameplay {
     flex-direction: column;
     max-width: 100%;
-    position: relative;
-    left: 150px;
+
     text-align: center;
   }
 
@@ -69,76 +71,107 @@
   #support {
     background-repeat: no-repeat;
     /* background: none; */
-    width: 100%;
+    /* width: 100%; */
     gap: 200px;
-    /* position: relative;
-    left: 150px; */
   }
 
   .support-info {
-    gap: 50px;
+    gap: 30px;
+    width: 400px;
   }
   .support-info img {
-    width: 600px;
-    background: aliceblue;
+    width: 400px;
     border-radius: 15px;
   }
   .support-info p {
-    font-size: 25px;
+    font-size: 20px;
+  }
+  #galeria {
+    grid-template-columns: 450px 450px;
+    grid-template-rows: repeat(5, 150px);
+    gap: 20px;
   }
 
-  footer {
-    width: 100%;
+  .img:nth-child(even),
+  .img:nth-child(odd) {
+    grid-area: auto;
+    background-position: center;
+  }
+  .img:nth-child(7) {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 2;
+    background-position: center;
+  }
+
+  .navbar i {
+    display: block;
+    font-size: 40px;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+
+  .navbar-list {
+    position: absolute;
+    top: 90px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    border: 3px solid aliceblue;
+    border-top: 0;
+    flex-direction: column;
+    background: var(--background);
+    border-radius: 0px 0px 15px 15px;
+    padding: 30px;
+    align-items: baseline;
+    display: none;
+  }
+
+  #toggle-menu:checked ~ .navbar-list {
+    display: flex;
   }
 }
-
+/* ========================celular=================== */
 @media (max-width: 576px) {
+  .navbar i {
+    display: block;
+    font-size: 40px;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+
+  .navbar-list {
+    position: absolute;
+    top: 90px;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    border: 3px solid aliceblue;
+    border-top: 0;
+    flex-direction: column;
+    background: var(--background);
+    border-radius: 0px 0px 15px 15px;
+    padding: 30px;
+    align-items: baseline;
+    display: none;
+    z-index: 1;
+  }
+
+  #toggle-menu:checked ~ .navbar-list {
+    display: flex;
+  }
+
   .about {
     display: none;
     background: #fff;
   }
 
-  #hero h1 {
-    font-size: 80px;
-  }
-
-  #cards h2 {
-    font-size: 50px;
-  }
-
-  .navbar i {
-    font-size: 40px;
-    display: none;
-  }
-  #toggle-menu {
-    display: none;
-  }
-  .navbar {
-    margin-right: 15px;
-  }
-  .navbar ul {
-    /* background-color: var(--fondo); */
-    width: 100%;
-    height: calc(100vh - 80px);
-    top: 80px;
-    left: 0px;
-    position: absolute;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    display: none;
-  }
-  .navbar i {
-    display: block;
-  }
-  #toggle-menu:checked ~ .navbar-list {
-    display: flex;
-  }
   #hero {
     padding: 0;
     margin-top: 100px;
   }
+
   #hero h1 {
+    font-size: 80px;
     position: relative;
     left: 0;
     font-size: 80px;
@@ -146,6 +179,9 @@
 
   #cards {
     max-width: 500px;
+  }
+  #cards h2 {
+    font-size: 50px;
   }
 
   .info-cards-container {
@@ -192,10 +228,12 @@
     background: none;
     flex-direction: column;
     gap: 20px;
-    padding: 0;
+    padding: 70px 0;
+    padding-bottom: 10px;
   }
   #support img {
     width: 500px;
+    background: #fff;
   }
   #support p {
     font-size: 20px;

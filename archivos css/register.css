@@ -1,110 +1,112 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,800;1,800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,400;1,200;1,800&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;0,800;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,400;1,200;1,800&display=swap");
 
 :root {
-    --background:linear-gradient(#090809,#122A77);
-    --letra: 'Montserrat', sans-serif;
-    --secundario:linear-gradient(to bottom, #31204b, #ff539b);
+  --background: linear-gradient(#090809, #122a77);
+  --letra: "Montserrat", sans-serif;
+  --secundario: linear-gradient(to bottom, #31204b, #ff539b);
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
-    list-style: none;
-    color: aliceblue;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: aliceblue;
 }
 
-
 html {
-    background: var(--background);
-    height: 100%;
+  background: var(--background);
+  height: 100%;
 }
 
 body {
-    display: flex;
-    justify-content:space-between;
-    align-items:center;
-   /* width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 50%;
    height: 100%;
    object-fit: cover; */
 }
 
-
 .register-img {
-    width: 50%;
-    object-fit: cover;
-    overflow: hidden;
-    height: 100vh;
-    box-shadow: 5px 0px 20px -5px #ff539b;
-    
+  width: 50%;
+  object-fit: cover;
+  overflow: hidden;
+  height: 100vh;
+  box-shadow: 5px 0px 20px -5px #ff539b;
 }
 
 .register-img img {
-    position:relative;
-    right: 320px;
-    
+  position: relative;
+  right: 320px;
 }
 
 .register-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    right: 320px;
-    box-shadow: 5px 0px 20px -5px #ff539b;
-    opacity: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 320px;
+  box-shadow: 5px 0px 20px -5px #ff539b;
+  opacity: 90%;
 }
 
 .register-form button {
-    font-size: 25px;
-    font-weight: 600;
-    text-transform: uppercase;
-   background:#122A77;
-    border-radius: 10px;
-    padding: 3px 15px;
-   border: none;
-   border-style: solid;
-   border-color: #31204b
+  font-size: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #122a77;
+  border-radius: 10px;
+  padding: 3px 15px;
+  border: none;
+  border-style: solid;
+  border-color: #31204b;
+}
+
+.register-form button {
+  transition-duration: 1s;
+  transition-property: all;
+}
+.register-form button:hover {
+  box-shadow: 0px 0px 10px 0px aliceblue;
+  background: #fff;
+  color: #31204b;
+}
+
+.register-form img {
+  width: 100px;
+  position: relative;
+  left: 100px;
+  filter: hue-rotate(80deg);
+  transition: all 2s;
+}
+
+.register-form img:hover {
+  filter: hue-rotate(-80deg);
+}
+
+.register-form label {
+  background: #31204b;
+  width: fit-content;
+  padding: 2px 5px;
+  border-radius: 5px;
 }
 
 body form {
-    display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 10px;
-padding: 10px;
-background:#ff539b;
-border-radius: 5px;
-color: #31204b;
-width: 300px;
-height: 300px;
-text-transform: uppercase;
-
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  background: #ff539b;
+  border-radius: 5px;
+  color: #31204b;
+  width: 320px;
+  height: 460px;
+  text-transform: uppercase;
 }
 body input {
-    color: #31204b;
+  color: #31204b;
 }
-
-
-
-
-
-
-    
-   
-    
-    
-
-  
-
-
-
-
-
-    
-
-    
